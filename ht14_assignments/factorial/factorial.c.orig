@@ -1,0 +1,70 @@
+/*
+ * factorial.c 
+ * Assignment 2 - EDAA25 (C programming)
+ * Author: Alexander Skafte
+ * Personal identity number: 941123-4330
+ * email: tfy13ask@student.lu.se
+ */
+
+#include <stdio.h>
+
+#define SIZE	(2048)
+
+void factorial(unsigned char n)
+{
+	if (n == 0) {
+		printf("\n\t0! = 1\n\n");
+		return;
+	}
+
+	unsigned char 	a[SIZE];	/* Array to hold each digit of result */
+	unsigned int 	index 	= 0;	/* Array index */
+
+	unsigned int 	tmp	= n;	/* For intermediate computations */
+	unsigned int 	digits	= 0;	/* Counts number of digits */
+	unsigned char 	carry	= 0;	/* Carry value when multiplicating */
+
+	/* Store each digit of n in a[], backwards */
+	while (tmp > 0) {
+		a[index++] = tmp % 10;
+		tmp /= 10;
+		digits++;
+	}
+
+	/*
+	 * Multiply every n and n-1, compute and store the carry so it
+	 * can be used in the next iteration.
+	 */
+	unsigned char m;
+	for (m = n; m > 1; --m) {
+		for (index = 0; index < digits; ++index) {
+			tmp = a[index] * (m - 1) + carry;
+			a[index] = tmp % 10;
+			carry = tmp / 10;
+		}
+		while (carry > 0) {
+			a[index++] = carry % 10;
+			carry /= 10;
+			digits++;
+		}
+	}
+
+	/* Print the result */
+	printf("\n\t%d! = ", n);
+	for (index = digits; index > 0; --index)
+		printf("%d", a[index - 1]);
+	printf("\n\n");
+}
+
+int main(void)
+{
+	unsigned int input;
+	printf("\nEnter a number to factorialize: ");
+	scanf("%d", &input);
+	while (input < 0 || input > 255) {
+		printf("Please enter an integer 1 <= n <= 255.\nNew number: ");
+		scanf("%d", &input);
+	}
+	factorial(input);
+	return 0;
+}

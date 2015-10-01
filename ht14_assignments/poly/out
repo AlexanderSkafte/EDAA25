@@ -1,0 +1,175 @@
+Begin polynomial test of (x^2 - 7x + 1) * (3x + 2)
+src = x^2 - 7x + 1
+dst = x
+
+src = x^2 - 7x + 1
+dst = x^
+
+src = x^2 - 7x + 1
+dst = x^2
+
+src = x^2 - 7x + 1
+dst = x^2 
+
+src = x^2 - 7x + 1
+dst = x^2 -
+
+src = x^2 - 7x + 1
+dst = x^2 - 
+
+src = x^2 - 7x + 1
+dst = x^2 - 7
+
+src = x^2 - 7x + 1
+dst = x^2 - 7x
+
+src = x^2 - 7x + 1
+dst = x^2 - 7x 
+
+src = x^2 - 7x + 1
+dst = x^2 - 7x +
+
+src = x^2 - 7x + 1
+dst = x^2 - 7x + 
+
+src = x^2 - 7x + 1
+dst = x^2 - 7x + 1
+
+src = x^2 - 7x + 1
+dst = x^2 - 7x + 1
+
+src = x^2 - 7x + 1
+dst = x^2 - 7x + 1
+
+Converted:
+	x^2 - 7x + 1   -->    x^2 - 7x + 1
+src = 3x + 2
+dst = 3
+
+src = 3x + 2
+dst = 3x
+
+src = 3x + 2
+dst = 3x 
+
+src = 3x + 2
+dst = 3x +
+
+src = 3x + 2
+dst = 3x + 
+
+src = 3x + 2
+dst = 3x + 2
+
+src = 3x + 2
+dst = 3x + 2
+
+src = 3x + 2
+dst = 3x + 2
+
+Converted:
+	3x + 2   -->    3x + 2
+End polynomial test of (x^2 - 7x + 1) * (3x + 2)
+
+
+Begin polynomial test of (x^10000000 + 2) * (2x^2 + 3x + 4)
+src = x^10000000 + 2
+dst = x
+
+src = x^10000000 + 2
+dst = x^
+
+src = x^10000000 + 2
+dst = x^1
+
+src = x^10000000 + 2
+dst = x^10
+
+src = x^10000000 + 2
+dst = x^100
+
+src = x^10000000 + 2
+dst = x^1000
+
+src = x^10000000 + 2
+dst = x^10000
+
+src = x^10000000 + 2
+dst = x^100000
+
+src = x^10000000 + 2
+dst = x^1000000
+
+src = x^10000000 + 2
+dst = x^10000000
+
+src = x^10000000 + 2
+dst = x^10000000 
+
+src = x^10000000 + 2
+dst = x^10000000 +
+
+src = x^10000000 + 2
+dst = x^10000000 + 
+
+src = x^10000000 + 2
+dst = x^10000000 + 2
+
+src = x^10000000 + 2
+dst = x^10000000 + 2
+
+src = x^10000000 + 2
+dst = x^10000000 + 2
+
+Converted:
+	x^10000000 + 2   -->    x^10000000 + 2
+src = 2x^2 + 3x + 4
+dst = 2
+
+src = 2x^2 + 3x + 4
+dst = 2x
+
+src = 2x^2 + 3x + 4
+dst = 2x^
+
+src = 2x^2 + 3x + 4
+dst = 2x^2
+
+src = 2x^2 + 3x + 4
+dst = 2x^2 
+
+src = 2x^2 + 3x + 4
+dst = 2x^2 +
+
+src = 2x^2 + 3x + 4
+dst = 2x^2 + 
+
+src = 2x^2 + 3x + 4
+dst = 2x^2 + 3
+
+src = 2x^2 + 3x + 4
+dst = 2x^2 + 3x
+
+src = 2x^2 + 3x + 4
+dst = 2x^2 + 3x 
+
+src = 2x^2 + 3x + 4
+dst = 2x^2 + 3x +
+
+src = 2x^2 + 3x + 4
+dst = 2x^2 + 3x + 
+
+src = 2x^2 + 3x + 4
+dst = 2x^2 + 3x + 4
+
+src = 2x^2 + 3x + 4
+dst = 2x^2 + 3x + 4
+
+src = 2x^2 + 3x + 4
+dst = 2x^2 + 3x + 4
+
+Converted:
+	2x^2 + 3x + 4   -->    2x^2 + 3x + 4
+End polynomial test of (x^10000000 + 2) * (2x^2 + 3x + 4)
+
+

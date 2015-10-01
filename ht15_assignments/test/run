@@ -1,0 +1,1 @@
+clear && clear && clang -g -Wall -Wextra -pedantic rpn.c -o rpn && valgrind --leak-check=full --show-leak-kinds=all --dsymutil=yes ./rpn < input
